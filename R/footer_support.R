@@ -41,7 +41,7 @@ footer_dependency <- function(){
   htmltools::htmlDependency(
     name="footer",
     version="1.0.0",
-    src=c(file=normalizePath("./assets/css")),
+    src=c(href="https://raw.githubusercontent.com/ntpuecon/econApp/main/assets/css/"),
     style="footer.css",
     all_files = F
   )}
