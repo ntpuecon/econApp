@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples footer(onType="首頁") |> econWeb::browseTag2()
-call_footer <- function(onType=c("首頁","找人", "找事/物","經濟數據")){
+footer <- function(onType=c("首頁","找人", "找事/物","經濟數據")){
   require(htmltools)
   onType = match.arg(onType)
   # footer_tag(onType)
@@ -37,14 +37,3 @@ footerBtns <- function(){
   ) -> btnHolders
   btnHolders
 }
-footer_dependency <- function(){
-  htmltools::htmlDependency(
-    name="footer",
-    version="1.0.0",
-    src=c(href="https://raw.githubusercontent.com/ntpuecon/econApp/main/assets/css/"),
-    style="footer.css",
-    all_files = F
-  )}
-
-
-

@@ -19,22 +19,6 @@ sectionContainer <- function(){
   tags$div(class = "sectionContainer-sectionGraph"),
   tags$div(class = "sectionContainer-sectionTitle"),
   tags$div(class = "sectionContainer-sectionArticle"))}
-page_dependency <- function(){
-  htmltools::htmlDependency(
-    name="page",
-    version="1.0.0",
-    src=c(file=normalizePath("./assets/css")),
-    style="page.css",
-    all_files = F
-  )}
-attachment_dependency <- function(){
-  htmltools::htmlDependency(
-    name="attachment",
-    version="1",
-    src=c(file=normalizePath("./assets/img")),
-    attachment="",
-    all_files = T
-  )}
 pageUI <- function(content=sectionPanel(), footerOn=c("首頁","找人", "找事/物","經濟數據")){
   require(htmltools)
   page_ui(content, footerOn)

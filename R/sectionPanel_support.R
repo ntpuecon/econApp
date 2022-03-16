@@ -8,29 +8,13 @@ tag_sectionPanel_section <- function(title, imgUrl,imgWidget, story, storyTitle)
     tags$div(class = "sectionPanel-section-title",storyTitle),
     tags$div(class = "sectionPanel-section-story",story))
 }
-tag_sectionPanel <-function(title="經濟數據", imgUrl="/lib/img-1/graphdemo.png", imgWidget, storyTitle=NULL, story=NULL){
+tag_sectionPanel <-function(title="經濟數據", imgUrl="https://ntpuecon.github.io/econApp/assets/img/graphdemo.png", imgWidget, storyTitle=NULL, story=NULL){
   if(!is.null(imgWidget)) imgUrl=""
   tags$div(class = "sectionPanel",
     tag_sectionPanel_section(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle, story=story)
     )
 }
-sectionPanel_dependency <- function(){
-  tagList(htmltools::htmlDependency(
-    name="sectionPanel",
-    version="1.0.0",
-    src=c(file=normalizePath("./assets/css")),
-    style="sectionPanel.css",
-    all_files = F
-  ),
-  htmltools::htmlDependency(
-    name="img",
-    version=1,
-    src=c(file=normalizePath("./assets/img")),
-    attachment = "",
-    all_files=T
-  )
-  )}
-call_sectionPanel <- function(title="經濟數據", imgUrl="/lib/img-1/graphdemo.png", imgWidget=NULL, storyTitle=NULL, story=NULL, dependency=NULL){
+call_sectionPanel <- function(title="經濟數據", imgUrl="https://ntpuecon.github.io/econApp/assets/img/graphdemo.png", imgWidget=NULL, storyTitle=NULL, story=NULL, dependency=NULL){
   require(htmltools)
   # tag_sectionPanel(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle=storyTitle, story=story)
   tagList(tag_sectionPanel(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle=storyTitle, story=story), sectionPanel_dependency(), dependency)

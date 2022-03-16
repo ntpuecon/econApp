@@ -2,10 +2,10 @@ tag_roundMaskBtn <-function(type, state="off"){
   require(htmltools)
   switch(
     type,
-    "首頁"={"./lib/attachment-1/home.svg"},
-    "找人"={"./lib/attachment-1/address.svg"},
-    "找事/物"={"./lib/attachment-1/news.svg"},
-    "經濟數據"={"./lib/attachment-1/graph.svg"}
+    "首頁"={"https://ntpuecon.github.io/econApp/assets/img/home.svg"},
+    "找人"={"https://ntpuecon.github.io/econApp/assets/img/address.svg"},
+    "找事/物"={"https://ntpuecon.github.io/econApp/assets/img/news.svg"},
+    "經濟數據"={"https://ntpuecon.github.io/econApp/assets/img/graph.svg"}
   ) -> imgUrl
   color = c("on"="#6fcf97", "off"="#000000")
   # .css=css("border-color"=color[[state]])
@@ -29,15 +29,8 @@ tag_roundMaskBtn <-function(type, state="off"){
           `-webkit-mask`= glue::glue("no-repeat center url({imgUrl})")
         ))))
 }
-roundMaskBtn_dependency <- function(){
-  htmltools::htmlDependency(
-    name="maskbtn",
-    version="1.0.0",
-    src=c(file=normalizePath("./assets/css")),
-    style="maskbtn.css",
-    all_files = F
-  )}
-roundMaskBtn <- function(imgUrl="/lib/attachment-1/graph.svg", color="#000000"){
+
+roundMaskBtn <- function(imgUrl="/assets/img/graph.svg", color="#000000"){
   tagList(tag_roundMaskBtn(imgUrl, color), roundMaskBtn_dependency())
 }
 
@@ -50,7 +43,7 @@ roundMaskBtn <- function(imgUrl="/lib/attachment-1/graph.svg", color="#000000"){
 #' @export
 #'
 #' @examples roundMaskBtn(type="首頁", state="off") |> econWeb::browseTag2()
-call_roundMaskBtn <- function(type=c("首頁","找人", "找事/物","經濟數據"), state=c("on","off")){
+roundMaskBtn <- function(type=c("首頁","找人", "找事/物","經濟數據"), state=c("on","off")){
   require(htmltools)
   type=match.arg(type)
   state=match.arg(state)

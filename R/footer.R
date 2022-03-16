@@ -5,7 +5,7 @@
 #' @import htmlwidgets
 #'
 #' @export
-footer <- function(onType=c("首頁","找人", "找事/物","經濟數據"), width = NULL, height = NULL, elementId = NULL) {
+.footer <- function(onType=c("首頁","找人", "找事/物","經濟數據"), width = NULL, height = NULL, elementId = NULL) {
 
   # forward options using x
   x = list(
