@@ -5,7 +5,7 @@
 #' @import htmlwidgets
 #'
 #' @export
-page <- function(content=sectionPanel(), footerOn=c("首頁","找人", "找事/物","經濟數據"), width = NULL, height = NULL, elementId = NULL) {
+.page <- function(content=sectionPanel(), footerOn=c("首頁","找人", "找事/物","經濟數據"), width = NULL, height = NULL, elementId = NULL) {
 
   # forward options using x
   x = list(

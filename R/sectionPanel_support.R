@@ -14,7 +14,7 @@ tag_sectionPanel <-function(title="經濟數據", imgUrl="https://ntpuecon.githu
     tag_sectionPanel_section(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle, story=story)
     )
 }
-call_sectionPanel <- function(title="經濟數據", imgUrl="https://ntpuecon.github.io/econApp/assets/img/graphdemo.png", imgWidget=NULL, storyTitle=NULL, story=NULL, dependency=NULL){
+sectionPanel <- function(title="經濟數據", imgUrl="https://ntpuecon.github.io/econApp/assets/img/graphdemo.png", imgWidget=NULL, storyTitle=NULL, story=NULL, dependency=NULL){
   require(htmltools)
   # tag_sectionPanel(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle=storyTitle, story=story)
   tagList(tag_sectionPanel(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle=storyTitle, story=story), sectionPanel_dependency(), dependency)

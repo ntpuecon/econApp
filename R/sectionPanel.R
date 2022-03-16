@@ -5,7 +5,7 @@
 #' @import htmlwidgets
 #'
 #' @export
-sectionPanel <- function(title="經濟數據", imgUrl="/lib/img-1/graphdemo.png", imgWidget=NULL, storyTitle=NULL, story=NULL, dependency=NULL, width = NULL, height = NULL, elementId = NULL) {
+.sectionPanel <- function(title="經濟數據", imgUrl="/lib/img-1/graphdemo.png", imgWidget=NULL, storyTitle=NULL, story=NULL, dependency=NULL, width = NULL, height = NULL, elementId = NULL) {
 
   # forward options using x
   x = list(

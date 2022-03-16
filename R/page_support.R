@@ -1,5 +1,5 @@
 
-page_ui <-function(content=sectionPanel(), footerOn=c("首頁","找人", "找事/物","經濟數據")){
+page <-function(content=sectionPanel(), footerOn=c("首頁","找人", "找事/物","經濟數據")){
   footerOn=match.arg(footerOn)
     tags$div(class = "page",
       # tags$div(
