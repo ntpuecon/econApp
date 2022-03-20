@@ -1,4 +1,5 @@
 statisticCard <- function(dependency=NULL){
+  require(htmltools)
   tagList(tag_statisticCard(), statisticCard_dependency(), dependency) -> tagx
   tagx |> econIDV::showWidget()
   invisible(tagx)
