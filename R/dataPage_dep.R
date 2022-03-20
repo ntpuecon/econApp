@@ -2,7 +2,7 @@ roundMaskBtn_dependency <- function(){
   htmltools::htmlDependency(
     name="econapp",
     version="1.0.0",
-    src=c(href="https://ntpuecon.github.io/econApp/assets/css"),
+    src=c(file=src_filepth()),
     style="maskbtn.css",
     all_files = T
   )}
@@ -10,7 +10,7 @@ page_dependency <- function(){
   htmltools::htmlDependency(
     name="page",
     version="1.0.0",
-    src=c(href="https://ntpuecon.github.io/econApp/assets/css"),
+    src=c(file=src_filepth()),
     style="page.css",
     all_files = F
   )}
@@ -18,7 +18,8 @@ footer_dependency <- function(){
   htmltools::htmlDependency(
     name="footer",
     version="1.0.0",
-    src=c(href="https://ntpuecon.github.io/econApp/assets/css"),
+    src=c(file=src_filepth()),
+    # c(href="https://ntpuecon.github.io/econApp/assets/css"),
     style="footer.css",
     all_files = F
   )}
@@ -34,7 +35,7 @@ sectionPanel_dependency <- function(){
   tagList(htmltools::htmlDependency(
     name="sectionPanel",
     version="1.0.0",
-    src=c(href="https://ntpuecon.github.io/econApp/assets/css"),
+    src=c(file=src_filepth()),
     style="sectionPanel.css",
     all_files = F
   ),
