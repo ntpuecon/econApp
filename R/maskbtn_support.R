@@ -1,3 +1,21 @@
+#' Rounded masked button
+#'
+#' @param type one of c("首頁","找人", "找事/物","經濟數據")
+#' @param state one of c("on", "off")
+#'
+#' @return
+#' @export
+#'
+#' @examples roundMaskBtn(type="首頁", state="off") |> econWeb::browseTag2()
+roundMaskBtn <- function(type=c("首頁","找人", "找事/物","經濟數據"), state=c("on","off")){
+  require(htmltools)
+  type=match.arg(type)
+  state=match.arg(state)
+
+  # tag_roundMaskBtn(imgUrl, state)
+  # browser()
+  tagList(tag_roundMaskBtn(type, state), roundMaskBtn_dependency())
+}
 tag_roundMaskBtn <-function(type, state="off"){
   require(htmltools)
   switch(
@@ -34,22 +52,5 @@ roundMaskBtn <- function(imgUrl="/assets/img/graph.svg", color="#000000"){
   tagList(tag_roundMaskBtn(imgUrl, color), roundMaskBtn_dependency())
 }
 
-#' Rounded masked button
-#'
-#' @param type one of c("首頁","找人", "找事/物","經濟數據")
-#' @param state one of c("on", "off")
-#'
-#' @return
-#' @export
-#'
-#' @examples roundMaskBtn(type="首頁", state="off") |> econWeb::browseTag2()
-roundMaskBtn <- function(type=c("首頁","找人", "找事/物","經濟數據"), state=c("on","off")){
-  require(htmltools)
-  type=match.arg(type)
-  state=match.arg(state)
 
-  # tag_roundMaskBtn(imgUrl, state)
-  # browser()
-  tagList(tag_roundMaskBtn(type, state), roundMaskBtn_dependency())
-}
 

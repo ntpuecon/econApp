@@ -4,10 +4,7 @@
 \alias{roundMaskBtn}
 \title{Rounded masked button}
 \usage{
-roundMaskBtn(
-  type = c("首頁", "找人", "找事/物", "經濟數據"),
-  state = c("on", "off")
-)
+roundMaskBtn(imgUrl = "/assets/img/graph.svg", color = "#000000")
 }
 \arguments{
 \item{type}{one of c("首頁","找人", "找事/物","經濟數據")}

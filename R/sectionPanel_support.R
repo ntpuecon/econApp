@@ -1,3 +1,21 @@
+#' Page section builder
+#'
+#' @param title
+#' @param imgUrl
+#' @param imgWidget
+#' @param storyTitle
+#' @param story
+#' @param dependency
+#'
+#' @return
+#' @export
+#'
+#' @examples none
+sectionPanel <- function(title="經濟數據", imgUrl="https://ntpuecon.github.io/econApp/assets/img/graphdemo.png", imgWidget=NULL, storyTitle=NULL, story=NULL, dependency=NULL){
+  require(htmltools)
+  # tag_sectionPanel(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle=storyTitle, story=story)
+  tagList(tag_sectionPanel(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle=storyTitle, story=story), sectionPanel_dependency(), dependency)
+}
 tag_sectionPanel_section <- function(title, imgUrl,imgWidget, story, storyTitle){
   # browser()
   tags$div(class = "sectionPanel-section",
@@ -14,11 +32,7 @@ tag_sectionPanel <-function(title="經濟數據", imgUrl="https://ntpuecon.githu
     tag_sectionPanel_section(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle, story=story)
     )
 }
-sectionPanel <- function(title="經濟數據", imgUrl="https://ntpuecon.github.io/econApp/assets/img/graphdemo.png", imgWidget=NULL, storyTitle=NULL, story=NULL, dependency=NULL){
-  require(htmltools)
-  # tag_sectionPanel(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle=storyTitle, story=story)
-  tagList(tag_sectionPanel(title=title, imgUrl=imgUrl, imgWidget=imgWidget, storyTitle=storyTitle, story=story), sectionPanel_dependency(), dependency)
-}
+
 # ui_sectionPanel() |> econWeb::browseTag2()
 # sectionPanel(story="Most data on the Russian home front are unreliable. The government has limited freedom of speech and arrested thousands of protesters. A few polls do show support for the war. In two surveys last month run by government-linked firms, around 65% of respondents backed the “special military operation”. Later independent polls found that 55-59% supported the military “action” or “operation”.
 #

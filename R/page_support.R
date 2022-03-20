@@ -1,10 +1,20 @@
 
-page <-function(content=sectionPanel(), footerOn=c("首頁","找人", "找事/物","經濟數據")){
+#' Page
+#'
+#' @param sectionPanel
+#' @param footerOn
+#'
+#' @return
+#' @export
+#'
+#' @examples none
+page <-function(sectionPanel=sectionPanel(), footerOn=c("首頁","找人", "找事/物","經濟數據")){
+  require(htmltools)
   footerOn=match.arg(footerOn)
     tags$div(class = "page",
       # tags$div(
         # class = "page-sectionPanel",
-      content,
+      sectionPanel,
         # sectionContainer()),
       footer(onType=footerOn),
       tags$script("screen.orientation.lock('portrait');")
