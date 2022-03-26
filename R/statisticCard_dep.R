@@ -1,6 +1,9 @@
 src_filepth = function(){
   system.file("assets/css", package="econApp")
 }
+src_filepthImg = function(){
+  system.file("assets/img", package="econApp")
+}
 statisticCard_dependency <- function(){
   htmltools::htmlDependency(
     name="statisticCard",

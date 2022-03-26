@@ -1,10 +1,11 @@
 businessCycle_info_byTime <- function(time="去年同月", light=c("recession", "out-of-recession", "stable", "out-of-boom", "boom"), quiet=F){
   require(htmltools)
 
-  lightImgSrc="https://ntpuecon.github.io/econApp/assets/img/light.png"
+  lightImgSrc="lib/attachment-1/light_downturn.svg"
   tagList(tag_statisticContentFrame(
     time, lightImgSrc
-  ), statisticContentFrame_dependency()) -> tagUI
+  ), statisticContentFrame_dependency(),
+    attachment_dependency()) -> tagUI
   if(!quiet) tagUI |> econIDV::showWidget()
   invisible(tagUI)
 }
