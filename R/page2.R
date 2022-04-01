@@ -26,7 +26,7 @@ page2_dependency <- function(){
     version="1.0.0",
     src=c(file=system.file("/assets/css",  package = "econApp")),
     style="page2.css",
-    all_files = F
+    all_files = T
   )}
 
 # ui_page2() |> econWeb::browseTag2()
