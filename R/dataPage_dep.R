@@ -1,3 +1,11 @@
+pageHeader_dependency <- function(){
+  htmltools::htmlDependency(
+    name="econApp",
+    version="1.0.0",
+    src=c(file=system.file("/assets/css",  package = "econApp")),
+    style="pageHeader.css",
+    all_files = F
+  )}
 roundMaskBtn_dependency <- function(){
   htmltools::htmlDependency(
     name="econapp",

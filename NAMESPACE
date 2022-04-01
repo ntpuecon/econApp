@@ -3,6 +3,7 @@
 export(.footer)
 export(.page)
 export(.sectionPanel)
+export(Page)
 export(footer)
 export(footerOutput)
 export(maskbtn)

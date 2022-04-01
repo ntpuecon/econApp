@@ -1,0 +1,2 @@
+.address{position:relative;width:40px;height:40px;border:2px solid #6FCF97;box-sizing:border-box;border-radius:40px;}
+.address-on{position:absolute;width:22.29px;height:24px;left:calc(50% - 22.29px/2 + 0.14px);top:calc(50% - 24px/2);background:#6FCF97;}
