@@ -1,0 +1,25 @@
+{
+  "name": "econapp",
+  "version": "1.0.0",
+  "description": "App for NTPU Economics Students",
+  "main": "index.js",
+  "directories": {
+    "man": "man"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntpuecon/econApp.git"
+  },
+  "author": "E-Major and Martin Lin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntpuecon/econApp/issues"
+  },
+  "homepage": "https://github.com/ntpuecon/econApp#readme",
+  "dependencies": {
+    "node": "^16.13.2"
+  }
+}
