@@ -1,8 +1,8 @@
 session = econWeb::webdriverChromeSession()
 session$start_session()
 session$go("https://cof.ntpu.edu.tw/pls/faculty/room_arrange.tecohours")
-sea_username=Sys.getenv("sea_username")
-sea_password=Sys.getenv("sea_password")
+sea_username=Sys.getenv("sea_username") # sea_username="系統登錄id"
+sea_password=Sys.getenv("sea_password") # sea_password="密碼"
 session$executeScript(
   glue::glue(
     htmltools::includeHTML("support/officehour.js"))
