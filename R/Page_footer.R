@@ -1,3 +1,6 @@
+footer2 <- function(onType="首頁", dependency=NULL){
+  tagList(tag_footer2(onType), footer2_dependency(), dependency)
+}
 tag_footer2 <-function(onType="首頁"){
   types=c("首頁","找人", "找事/物","經濟數據")
   purrr::map(
@@ -17,6 +20,10 @@ inversemapname <- function(icon){
   names(.names) = .icons
   .names[icon]
 }
+mapname = function(types){
+  c("首頁"="home","找人"="findPerson", "找事/物"="findThings","經濟數據"="econData")[types]
+}
+
 tag_footerButton <- function(onType, type="off"){
   tags$div(class = "footer-buttonHolderGraph",
     mask_btn(
@@ -24,15 +31,5 @@ tag_footerButton <- function(onType, type="off"){
     tags$div(class = "footer-buttonHolderGraph-text",
       onType))
 }
-footer2_dependency <- function(){
-  htmltools::htmlDependency(
-    name="econApp-footer2",
-    version="1.0.0",
-    src=c(file=system.file("/assets/css",  package = "econApp")),
-    style="footer2.css",
-    all_files = F
-  )}
-footer2 <- function(onType="首頁", dependency=NULL){
-  tagList(tag_footer2(onType), footer2_dependency(), dependency)
-}
+
 # footer2() |> econWeb::browseTag2()

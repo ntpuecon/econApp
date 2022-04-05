@@ -1,11 +1,4 @@
-pageHeader_dependency <- function(){
-  htmltools::htmlDependency(
-    name="econApp",
-    version="1.0.0",
-    src=c(file=system.file("/assets/css",  package = "econApp")),
-    style="pageHeader.css",
-    all_files = F
-  )}
+
 roundMaskBtn_dependency <- function(){
   htmltools::htmlDependency(
     name="econapp",
@@ -30,15 +23,6 @@ footer_dependency <- function(){
     # c(href="https://ntpuecon.github.io/econApp/assets/css"),
     style="footer.css",
     all_files = F
-  )}
-attachment_dependency <- function(){
-  htmltools::htmlDependency(
-    name="attachment",
-    version="1",
-    src=c(file=src_filepthImg()),
-    # src=c(href="https://ntpuecon.github.io/econApp/assets/img"),
-    attachment="",
-    all_files = T
   )}
 sectionPanel_dependency <- function(){
   tagList(htmltools::htmlDependency(

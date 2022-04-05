@@ -1,52 +1,25 @@
-#' <Add Title>
+#' Page template constructor
 #'
-#' <Add Description>
+#' @param pageTitle title of the page, default at "首頁"
+#' @param content a shiny.tag to be inserted into page content.
 #'
-#' @import htmlwidgets
-#'
+#' @return
 #' @export
-.page <- function(content=sectionPanel(), footerOn=c("首頁","找人", "找事/物","經濟數據"), width = NULL, height = NULL, elementId = NULL) {
+#'
+#' @examples none.
+Page <- function(pageTitle="首頁", content=NULL){
+  require(htmltools)
+  tagList(tag_page2(pageTitle, content), page_dependency(), maskBtn_dependency())
+}
+tag_page2 <-function(pageTitle="首頁", content=NULL){
+    tags$div(class = "page",
+      pageHeader(pageTitle),
+      tags$div(class = "page-content",
+        content),
+      footer2(
+        onType=pageTitle
+      ))
 
-  # forward options using x
-  x = list(
-    innerHTML = as.character(page_ui(content, footerOn))
-  )
-
-  # create widget
-  htmlwidgets::createWidget(
-    name = 'page',
-    x,
-    width = width,
-    height = height,
-    package = 'econApp',
-    elementId = elementId
-  )
 }
 
-#' Shiny bindings for page
-#'
-#' Output and render functions for using page within Shiny
-#' applications and interactive Rmd documents.
-#'
-#' @param outputId output variable to read from
-#' @param width,height Must be a valid CSS unit (like \code{'100\%'},
-#'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
-#'   string and have \code{'px'} appended.
-#' @param expr An expression that generates a page
-#' @param env The environment in which to evaluate \code{expr}.
-#' @param quoted Is \code{expr} a quoted expression (with \code{quote()})? This
-#'   is useful if you want to save an expression in a variable.
-#'
-#' @name page-shiny
-#'
-#' @export
-pageOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'page', width, height, package = 'econApp')
-}
-
-#' @rdname page-shiny
-#' @export
-renderPage <- function(expr, env = parent.frame(), quoted = FALSE) {
-  if (!quoted) { expr <- substitute(expr) } # force quoted
-  htmlwidgets::shinyRenderWidget(expr, pageOutput, env, quoted = TRUE)
-}
+# ui_page2() |> econWeb::browseTag2()

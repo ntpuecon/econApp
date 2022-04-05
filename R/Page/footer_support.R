@@ -12,9 +12,6 @@ footer <- function(onType=c("首頁","找人", "找事/物","經濟數據")){
   # footer_tag(onType)
   tagList(footer_tag(onType), footer_dependency())
 }
-mapname = function(types){
-  c("首頁"="home","找人"="findPerson", "找事/物"="findThings","經濟數據"="econData")[types]
-}
 footer_tag <-function(onType="經濟數據"){
   # onType="經濟數據"
     types = c("首頁","找人", "找事/物","經濟數據")
