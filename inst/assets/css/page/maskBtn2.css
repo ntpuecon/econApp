@@ -1,0 +1,82 @@
+/* mask button */
+.mask-btn {
+position: static;
+width: 40px;
+height: 40px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 9px 0px;
+}
+
+/* Mask group */
+.mask-group {
+width: 40px;
+height: 40px;
+left: 0px;
+top: 0px;
+}
+
+
+/* mask image */
+.mask-image {
+position: absolute;
+width: 40px;
+height: 40px;
+
+border-radius: 40px;
+-webkit-mask-image: url(/lib/attachment-1/home.svg);
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+mask-image: url(/lib/attachment-1/home.svg);
+mask-repeat: no-repeat;
+mask-position: center;
+}
+.mask-color {
+  height: 40px;
+  background: black;
+}
+.mask-btn.home .mask-image {
+    -webkit-mask-image: url(/lib/attachment-1/home.svg);
+    mask-image: url(/lib/attachment-1/home.svg);
+}
+.mask-image::before {
+/* filter color */
+
+width: 40px;
+height: 40px;
+left: 0px;
+top: 0px;
+background: #000000;
+border-radius: 40px;
+}
+.mask-btn.econData .mask-image {
+    -webkit-mask-image: url(/lib/attachment-1/econData.svg);
+    mask-image: url(/lib/attachment-1/econData.svg);
+}
+.mask-btn.findThings .mask-image {
+    -webkit-mask-image: url(/lib/attachment-1/findThings.svg);
+    mask-image: url(/lib/attachment-1/findThings.svg);
+}
+.mask-btn.findPerson .mask-image {
+    -webkit-mask-image: url(/lib/attachment-1/findPerson.svg);
+    mask-image: url(/lib/attachment-1/findPerson.svg);
+}
+.mask-btn.return .mask-image {
+    -webkit-mask-image: url(/lib/attachment-1/return.svg);
+    mask-image: url(/lib/attachment-1/return.svg);
+}
+.mask-btn.on .mask-color {
+    background: #6FCF97;
+}
+.mask-btn.on {
+    box-shadow: none;
+}

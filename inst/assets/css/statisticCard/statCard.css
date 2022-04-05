@@ -1,0 +1,18 @@
+.statisticCard.blue {
+  background: #56CCF263;
+}
+.statisticCard.yellow {
+  background: #F2C94C8A;
+}
+.statisticCard.green {
+  background: #6FCF9770;
+}
+.statisticCard.pink {
+  background: #EB575726;
+}
+.statisticCard{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0px 10px 5px;position:relative;width:120px;height:85px;background:rgba(86, 204, 242, 0.39);box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:12px;
+}
+.statisticCard-titleHolder{display:flex;flex-direction:row;align-items:center;/*padding:3px 6px 10px;*/flex:none;order:0;align-self:stretch;flex-grow:0;/*margin:4px 0px;*/position:static;height:0px;left:calc(50% - 119px/2);top:calc(50% - 0px/2 - 41px);}
+.statisticCard-titleHolder-title{flex:none;order:0;flex-grow:1;position:static;width:107px;height:23px;left:6px;top:-15px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;display:flex;align-items:flex-end;color:#0C2973;text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);}
+.statisticCard-fluidContainer{display:flex;flex-direction:column;justify-content:center;align-items:center;padding-top:11px;flex:none;order:1;align-self:stretch;flex-grow:1;margin:4px 0px;position:static;height:69px;left:10px;top:8px;}
+

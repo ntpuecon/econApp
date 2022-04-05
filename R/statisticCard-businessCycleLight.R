@@ -1,0 +1,41 @@
+businessCycle_info_byTime <- function(time="去年同月", light=c("recession", "out-of-recession", "stable", "out-of-boom", "boom"), quiet=T){
+  require(htmltools)
+
+  lightImgSrc="lib/attachment-1/light_downturn.svg"
+  tagList(tag_statisticContentFrame(
+    time, lightImgSrc
+  ), statisticContentFrame_dependency(),
+    attachment_dependency()) -> tagUI
+  if(!quiet) tagUI |> econIDV::showWidget()
+  invisible(tagUI)
+}
+tag_statisticContentFrame <-function(time="去年同月", lightImgSrc="https://ntpuecon.github.io/econApp/assets/img/light.png"){
+  tags$div(class = "bcInMonth",
+    tags$div(class = "bcInMonth-time",
+      time),
+    tags$div(class = "bcInMonth-light",
+      tags$div(class = "bcInMonth-light-lightFrame",
+        tags$div(class = "bcInMonth-light-lightFrame-lightImg",
+          style=
+            glue::glue('background: url({lightImgSrc});'))),
+      tags$div(class = "bcInMonth-light-ligtbulb",
+        tags$img(
+          src="https://ntpuecon.github.io/econApp/assets/img/lightbulb.svg",
+          height="20px", width="14px"
+        ))))
+}
+ui_statisticContentFrame <- function(dependency=NULL){
+  tagList(tag_statisticContentFrame(), statisticContentFrame_dependency(), dependency)
+}
+businessCycleLight <- function(){
+  tagList(
+    businessCycle_info_byTime(
+      "3月"
+    ),
+    businessCycle_info_byTime(
+      "上個月"
+    ),
+    businessCycle_info_byTime(
+      "去年同月"
+    ))
+}

@@ -1,0 +1,9 @@
+.header{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 0 20px;position:fixed;height:95px; width:100%;background: #FFFFFF;z-index:99;
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.header-content{display:flex;flex-direction:row;align-items:flex-end;padding:30px 0px 0px 25px;flex:none;order:0;flex-grow:0;margin:7.5px 0px;position:static;width:375px;height:80px;left:0px;top:0px;}
+.header-content-icon{flex:none;order:0;flex-grow:0;margin:0px 16px;position:static;width:50px;height:50px;left:25px;top:30px;background:url(/lib/attachment-1/ntpuecon.svg);;}
+.ntpuecon{position:absolute;left:0.21%;right:-0.21%;top:0.43%;bottom:-0.43%;background:#0C2973;border:1px solid #FFFFFF;}
+.header-content-text{flex:none;order:1;flex-grow:0;margin:0px 16px;position:static;width:96px;height:28px;left:107px;top:52px;}
+.pageHeader-content-text{position:absolute;left:0%;right:0%;top:0%;bottom:0%;font-family:'Roboto';font-style:normal;font-weight:400;font-size:24px;line-height:28px;display:flex;align-items:flex-end;color:#000000;}
+.header-divider{flex:none;order:1;align-self:stretch;flex-grow:0;margin:7.5px 0px;position:static;height:0px;left:0px;top:95px;border:1px solid #E0E0E0;}
