@@ -1,0 +1,16 @@
+.ebookcard{display:flex;flex-direction:column;align-items:center;padding:50px 10px 20px;position:relative;width:172.5px;height:302px;background:#FFFFFF;border:1px solid rgba(0, 0, 0, 0.5);box-sizing:border-box;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:20px;}
+.ebookcard-icon{display:flex;flex-direction:column;align-items:center;padding:0px;flex:none;order:0;flex-grow:0;position:static;width:132px;height:159px;left:20.25px;top:50px;}
+.ebookcard-icon-icon{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;flex:none;order:0;flex-grow:0;margin:5px 0px;position:static;width:132px;height:121px;left:0px;top:0px;background:rgba(39, 174, 96, 0.5);border-radius:100px;}
+.icon-park-outline:ipad{display:flex;flex-direction:row;align-items:flex-start;padding:38px 66px;flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;width:178px;height:131px;left:calc(50% - 178px/2);top:calc(50% - 131px/2);}
+.Group{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;left:37.08%;right:37.08%;top:29.01%;bottom:29.01%;}
+.ebookcard-icon-iconName{flex:none;order:1;flex-grow:0;margin:5px 0px;position:static;width:120px;height:28px;left:6px;top:131px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:24px;line-height:28px;color:#000000;}
+.pill{display:flex;flex-direction:row;align-items:flex-start;padding:0px;flex:none;order:1;align-self:stretch;flex-grow:0;margin:30px 0px;position:static;width:152.5px;height:43px;left:10px;top:239px;}
+.pill-availability{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:7px 10px;flex:none;order:0;align-self:stretch;flex-grow:1;margin:0px 0px;position:static;/*width:76.25px;*/left:0px;top:0px;border:2px solid #27AE60;box-sizing:border-box;border-radius:100px 0px 0px 100px;}
+.pill-availability-icon{flex:none;order:0;flex-grow:0;margin:0px 4px;position:static;width:20px;height:20px;left:7.12px;top:11.5px;}
+.iconAvailable{position:absolute;width:20px;height:20px;left:0px;top:0px;}
+.pill-availability-number{flex:none;order:1;flex-grow:0;margin:0px 4px;position:static;width:34px;height:19px;left:35.12px;top:12px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:16px;line-height:19px;color:#000000;}
+.pill-action{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:10px;flex:none;order:1;align-self:stretch;flex-grow:1;margin:0px 0px;position:static;left:76.25px;top:0px;background:#27AE60;border-radius:0px 100px 100px 0px;}
+.pill-action-type{flex:none;order:0;flex-grow:0;position:static;width:32px;height:19px;left:22.12px;top:12px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:16px;line-height:19px;color:#FFFFFF;}
+.Vector{position:absolute;width:46px;height:55px;left:calc(50% - 46px/2);top:calc(50% - 55px/2);background:#FFFFFF;border:5px solid #000000;}
+.Vector1{position:absolute;width:6.13px;height:0px;left:calc(50% - 6.13px/2 + 0px);top:calc(50% - 0px/2 + 17.37px);background:#FFFFFF;border:5px solid #000000;}
+.Vector2{position:absolute;left:0%;right:0%;top:0%;bottom:0%;background:#27AE60;}
