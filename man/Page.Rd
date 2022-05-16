@@ -2,21 +2,13 @@
 % Please edit documentation in R/page.R
 \name{Page}
 \alias{Page}
-\title{Page template constructor}
+\title{Title}
 \usage{
-Page(pageTitle = "首頁", content = NULL)
-}
-\arguments{
-\item{pageTitle}{title of the page, default at "首頁"}
-
-\item{content}{a shiny.tag to be inserted into page content.}
+Page()
 }
 \value{
 
 }
 \description{
-Page template constructor
-}
-\examples{
-none.
+Title
 }
