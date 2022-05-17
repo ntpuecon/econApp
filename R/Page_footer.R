@@ -65,7 +65,7 @@ FooterButtons <- function(...){
 #' @return a list with on() and off() method and default property .tag
 #' @export
 #'
-#' @examples
+#' @examples \dontrun{}
 FooterButton <- function(onType){
   btn = new.env()
   btn$on=function(){tags$div(class = "footer-buttonHolderGraph",

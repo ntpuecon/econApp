@@ -1,18 +1,3 @@
-#' Title
-#'
-#' @return
-#' @export
-#'
-#' @examples
-Page <- function(){
-  require(htmltools)
-  page = new.env()
-  page$home = function(content) pages(pageTitle="首頁", content=htmltools::div())
-  page$people = function(content) pages(pageTitle="找人", content=htmltools::div())
-  page$things = function(content) pages(pageTitle="找事/物", content=htmltools::div())
-  page$statistics = function(content) pages(pageTitle="經濟數據", content=htmltools::div())
-  return(page)
-}
 #' Page template constructor
 #'
 #' @param pageTitle title of the page, default at "首頁". choices are "首頁","找人", "找事/物","經濟數據"
@@ -21,7 +6,7 @@ Page <- function(){
 #' @return
 #' @export
 #'
-#' @examples none.
+#' @examples \dontrun{}
 pages <- function(pageTitle="首頁", content=NULL){
   require(htmltools)
   tagList(tag_page2(pageTitle, content), page_dependency(), maskBtn_dependency())

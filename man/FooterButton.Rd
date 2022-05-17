@@ -15,3 +15,6 @@ a list with on() and off() method and default property .tag
 \description{
 Generate one of the four footer btn functions
 }
+\examples{
+\dontrun{}
+}

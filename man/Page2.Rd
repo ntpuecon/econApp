@@ -10,12 +10,13 @@ Page2(pageTitle = "首頁")
 \item{pageTitle}{}
 }
 \value{
-
+a shiny tag
 }
 \description{
 initiate a page constructor
 }
 \examples{
+\dontrun{
 # construct homepage
 homepage = Page2("首頁")
 homepage$create()
@@ -41,5 +42,5 @@ statPage = Page2("經濟數據")
 statPage$create()
 statPage$footer$button[[4]]$on()
 statPage$add_content("數據內容")
-statPage$tag() |> econWeb::browseTag2()
+statPage$tag() |> econWeb::browseTag2()}
 }

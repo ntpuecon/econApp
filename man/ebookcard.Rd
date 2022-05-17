@@ -11,9 +11,6 @@ ebookcard(number, dependency = NULL)
 
 \item{dependency}{default=NULL}
 }
-\value{
-
-}
 \description{
 產生電子書可借存量小卡片
 }
