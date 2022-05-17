@@ -1,13 +1,13 @@
 #' Page template constructor
 #'
-#' @param pageTitle title of the page, default at "首頁"
+#' @param pageTitle title of the page, default at "首頁". choices are "首頁","找人", "找事/物","經濟數據"
 #' @param content a shiny.tag to be inserted into page content.
 #'
 #' @return
 #' @export
 #'
-#' @examples none.
-Page <- function(pageTitle="首頁", content=NULL){
+#' @examples \dontrun{}
+pages <- function(pageTitle="首頁", content=NULL){
   require(htmltools)
   tagList(tag_page2(pageTitle, content), page_dependency(), maskBtn_dependency())
 }
