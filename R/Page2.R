@@ -1,6 +1,6 @@
 #' initiate a page constructor
 #'
-#' @param pageTitle
+#' @param pageTitle one of "首頁","找人", "找事/物","經濟數據"
 #'
 #' @return a shiny tag
 #' @export
@@ -71,7 +71,7 @@ pageTagMethod <- function(pageX){
 }
 #' initiate a page constructor
 #'
-#' @param pageTitle
+#' @param pageTitle one of "首頁","找人", "找事/物","經濟數據"
 #'
 #' @return a shiny tag
 #' @export

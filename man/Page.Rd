@@ -7,7 +7,7 @@
 Page(pageTitle = "首頁")
 }
 \arguments{
-\item{pageTitle}{}
+\item{pageTitle}{one of "首頁","找人", "找事/物","經濟數據"}
 }
 \value{
 a shiny tag
