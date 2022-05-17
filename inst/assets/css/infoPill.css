@@ -1,0 +1,7 @@
+.pill{display:flex;flex-direction:row;align-items:flex-start;padding:0px;position:relative;width:152.5px;height:43px;}
+.pill-quota{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:7px 10px;flex:none;order:0;align-self:stretch;flex-grow:1;margin:0px 0px;position:static;width:76.25px;left:0px;top:0px;border:2px solid #27AE60;box-sizing:border-box;border-radius:100px 0px 0px 100px;}
+.pill-quota-icon{flex:none;order:0;flex-grow:0;margin:0px 4px;position:static;width:20px;height:20px;left:7.12px;top:11.5px;}
+.Vector{position:absolute;left:0%;right:0%;top:0%;bottom:0%;background:#27AE60;}
+.pill-quota-text{flex:none;order:1;flex-grow:0;margin:0px 4px;position:static;width:34px;height:19px;left:35.12px;top:12px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:16px;line-height:19px;color:#000000;}
+.pill-status{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:10px;flex:none;order:1;align-self:stretch;flex-grow:1;margin:0px 0px;position:static;width:76.25px;left:76.25px;top:0px;background:#27AE60;border-radius:0px 100px 100px 0px;}
+.借用{flex:none;order:0;flex-grow:0;margin:0px 34px;position:static;width:32px;height:19px;left:22.12px;top:12px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:16px;line-height:19px;color:#FFFFFF;}

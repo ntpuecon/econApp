@@ -20,9 +20,6 @@ statCard(
 
 \item{dependency}{default=NULL}
 }
-\value{
-
-}
 \description{
 經濟數據小卡片
 }
