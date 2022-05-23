@@ -1,9 +1,9 @@
-ebookcard_dependency <-econData_dependency <- pageHeader_dependency<-maskBtn_dependency <- footer2_dependency <- page_dependency <- function(){
+requireclass_dependency <-ebookcard_dependency <-econData_dependency <- pageHeader_dependency<-maskBtn_dependency <- footer2_dependency <- page_dependency <- function(){
   htmltools::htmlDependency(
     name="econApp",
     version="1.0.0",
     src=c(file=system.file("/assets",  package = "econApp")),
-    style=c("css/page-master.css","css/statisticCard-master.css", "css/econData.css", "css/ebookcard.css"),
+    style=c("css/page-master.css","css/statisticCard-master.css", "css/econData.css", "css/ebookcard.css","css/requireclass.css"),
     all_files = T
   )}
 
