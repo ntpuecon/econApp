@@ -26,14 +26,14 @@ tag_equipmentCard <-function(eqpt, state, number){
 #     style="equipmentCard.css",
 #     all_files = F
 #   )}
-{
-if(A){
-  pillButton1(...) -> pillBtn
-} else {
-  pillButton2(...) -> pillBtn
-}
-pillBtn
-}
+# {
+# if(A){
+#   pillButton1(...) -> pillBtn
+# } else {
+#   pillButton2(...) -> pillBtn
+# }
+# pillBtn
+# }
 
 iconCardimage <- function(eqpt){
   switch(
