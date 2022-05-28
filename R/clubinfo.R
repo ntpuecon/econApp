@@ -1,11 +1,17 @@
 library(htmltools)
 fig_clubinfo<- function() {
   fig<-econWeb::Fig()
-  fig$export("inst/assets/css/clubinfo")
+  fig$export("inst/assets/css/clubinfo",
+             tags$img(
+    src="lib/econApp-1.0.0/img/iconEbook.svg"
+  ))
 }
 tag_clubinfo <-function(){
   tags$div(class = "info",
-           tags$div(class = "info-icon"),
+           tags$div(class = "info-icon",
+                    tags$img(
+                      src="lib/econApp-1.0.0/img/iconnews.svg"
+           )),
            tags$div(class = "info-content",
                     tags$div(class = "info-content-head","碳排大戶 台電恐年付289億碳費
 TW.NEWS.YAHOO.COM"),
