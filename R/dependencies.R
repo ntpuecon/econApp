@@ -1,4 +1,4 @@
-clubinfo_dependency <-requireclass_dependency <-ebookcard_dependency <-econData_dependency <- pageHeader_dependency<-maskBtn_dependency <- footer2_dependency <- page_dependency <- function(){
+clubinfo_dependency <- requireclass_dependency <-ebookcard_dependency <-econData_dependency <- pageHeader_dependency<-maskBtn_dependency <- footer2_dependency <- page_dependency <- function(){
   htmltools::htmlDependency(
     name="econApp",
     version="1.0.0",
