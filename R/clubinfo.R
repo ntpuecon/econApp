@@ -10,7 +10,7 @@ tag_clubinfo <-function(){
                     tags$div(class = "info-content-head","碳排大戶 台電恐年付289億碳費
 TW.NEWS.YAHOO.COM"),
                     tags$div(class = "info-content-body","張 孝銘>>大家好~為了這國家，大家有解方嗎?這筆錢可以減少嗎?因為這是大家的錢。"),
-                    tags$div(class = "info-content-date","2021年11月20日")))
+                    tags$div(class = "info-content-date","2021年11月21日")))
 }
 # clubinfo_dependency <- function(){
 #   htmltools::htmlDependency(
