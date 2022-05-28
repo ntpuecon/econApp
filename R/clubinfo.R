@@ -6,7 +6,11 @@ fig_clubinfo<- function() {
 tag_clubinfo <-function(){
   tags$div(class = "info",
            tags$div(class = "info-icon"),
-           tags$div(class = "info-content"))
+           tags$div(class = "info-content",
+                    tags$div(class = "info-content-head","碳排大戶 台電恐年付289億碳費
+TW.NEWS.YAHOO.COM"),
+                    tags$div(class = "info-content-body"),
+                    tags$div(class = "info-content-date")))
 }
 # clubinfo_dependency <- function(){
 #   htmltools::htmlDependency(
@@ -19,5 +23,7 @@ tag_clubinfo <-function(){
 ui_clubinfo <- function(dependency=NULL){
   tagList(tag_clubinfo(), clubinfo_dependency(), dependency)
 }
+#ui_clubinfo() |> econWeb::browseTag2()
+
 #ui_clubinfo() |> econWeb::browseTag2()
 
