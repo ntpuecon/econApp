@@ -1,9 +1,8 @@
-.lectureCard{display:flex;flex-direction:row;justify-content:flex-end;align-items:flex-end;padding:0px;position:relative;width:461px;height:206px;background:rgba(111, 207, 151, 0.4);box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:20px;}
+.lectureCard{display:flex;flex-direction:row;justify-content:flex-end;align-items:flex-end;padding:0px;position:relative;width:461px;height:206px;background:rgba(242, 201, 76, 0.4);box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:20px;}
 .lectureCard-info{display:flex;flex-direction:row;align-items:center;padding:0px;flex:none;order:0;align-self:stretch;flex-grow:1;margin:px;width:407px;}
 .lectureCard-info-word{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:30px 0px 30px 20px;gap:5px;flex:none;order:0;align-self:stretch;flex-grow:1;width:min-content;}
-.lectureCard-info-word-department{flex:none;order:0;align-self:stretch;flex-grow:0;margin:px;height:23px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;color:#333333;}
-.lectureCard-info-word-lecturer{flex:none;order:1;flex-grow:0;margin:px;width:60px;height:23px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;color:#333333;}
-.lectureCard-info-word-topic{flex:none;order:2;align-self:stretch;flex-grow:0;margin:px;/*height:69px;*/font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;color:#828282;}
+.lectureCard-info-word-topic{flex:none;order:0;align-self:stretch;flex-grow:0;margin:px;/*height:69px;*/font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;color:#000000;}
+.lectureCard-info-word-lecturer{flex:none;order:1;flex-grow:0;margin:px;/*:60px;height:23px;*/font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;color:#828282;}
 .lectureCard-icon{flex:none;order:1;flex-grow:0;margin:px;width:54px;/*height:114px;*/}
 .iconMeet{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:5px 10px 10px;position:absolute;width:55px;height:48px;right:0px;bottom:0px;border-radius:0px 0px 20px 0px;}
 .Vector{flex:none;order:0;flex-grow:0;width:31px;height:33px;background:#EB5757;}
