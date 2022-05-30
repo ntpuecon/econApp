@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: initiate a page constructor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for Page {econApp}"><tr><td>Page {econApp}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>initiate a page constructor</h2>
+
+<h3>Description</h3>
+
+<p>initiate a page constructor
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+Page(pageTitle = "首頁")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>pageTitle</code></td>
+<td>
+<p>one of &quot;首頁&quot;,&quot;找人&quot;, &quot;找事/物&quot;,&quot;經濟數據&quot;</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a shiny tag
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+# construct homepage
+homepage = Page("首頁")
+homepage$create()
+homepage$footer$button[[1]]$on()
+homepage$add_content("首頁內容")
+homepage$tag() |&gt; econWeb::browseTag2()
+homepage$footer$button[[1]]$return()
+homepage$tage() |&gt; econWeb::browseTag2()
+
+pplPage = Page("找人")
+pplPage$create()
+pplPage$footer$button[[2]]$on()
+pplPage$add_content("找人內容")
+pplPage$tag() |&gt; econWeb::browseTag2()
+
+thingPage = Page("找事/物")
+thingPage$create()
+thingPage$footer$button[[3]]$on()
+thingPage$add_content("找事/物內容")
+thingPage$tag() |&gt; econWeb::browseTag2()
+
+statPage = Page("經濟數據")
+statPage$create()
+statPage$footer$button[[4]]$on()
+statPage$add_content("數據內容")
+statPage$tag() |&gt; econWeb::browseTag2()
+## End(Not run)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>econApp</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</div></body></html>
