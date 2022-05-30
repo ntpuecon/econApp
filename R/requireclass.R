@@ -90,5 +90,5 @@ tag_requireclass <-function(){
 
 
 
-#ui_requireclass() |> browseTag2()
+#ui_requireclass() |> econWeb::browseTag2()
 
