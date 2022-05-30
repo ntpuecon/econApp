@@ -3,7 +3,7 @@ fig_clubinfo<- function() {
   fig<-econWeb::Fig()
   fig$export("inst/assets/css/clubinfo",
              tags$img(
-    src="lib/econApp-1.0.0/img/iconEbook.svg"
+    src="lib/econApp-1.0.0/img/iconnews.svg"
   ))
 }
 tag_clubinfo <-function(){

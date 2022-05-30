@@ -2,7 +2,8 @@ FooterButton            Generate one of the four footer btn functions
 Page                    initiate a page constructor
 Page2                   initiate a page constructor
 calendar                講座 日期
-classes                 生成課程地圖小卡片
+classes                 生成課程地圖(課程名稱)小卡片
+coursemap               生成課程地圖(分類和背景)卡片
 ebookcard               產生電子書可借存量小卡片
 lectureCard             講座卡片
 pages                   Page template constructor

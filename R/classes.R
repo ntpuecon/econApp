@@ -1,4 +1,4 @@
-#' 生成課程地圖小卡片
+#' 生成課程地圖(課程名稱)小卡片
 #'
 #' @param class1 a character 課程名稱例如"經濟學原理"(可留空格)
 #' @param class2 a character
