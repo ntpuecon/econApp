@@ -26,10 +26,8 @@ TW.NEWS.YAHOO.COM"),
 #     style="clubinfo.css",
 #     all_files = F
 #   )}
-ui_clubinfo <- function(dependency=NULL){
+clubinfo <- function(dependency=NULL){
   tagList(tag_clubinfo(), clubinfo_dependency(), dependency)
 }
-#ui_clubinfo() |> econWeb::browseTag2()
-
-#ui_clubinfo() |> econWeb::browseTag2()
+#clubinfo() |> econWeb::browseTag2()
 
