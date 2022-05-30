@@ -2,7 +2,7 @@
 % Please edit documentation in R/classes.R
 \name{classes}
 \alias{classes}
-\title{生成課程地圖小卡片}
+\title{生成課程地圖(課程名稱)小卡片}
 \usage{
 classes(
   class1 = "經濟學原理",
@@ -42,7 +42,7 @@ classes(
 
 }
 \description{
-生成課程地圖小卡片
+生成課程地圖(課程名稱)小卡片
 }
 \examples{
 none
