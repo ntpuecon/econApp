@@ -1,0 +1,9 @@
+.info{display:flex;flex-direction:row;align-items:center;padding:0px;position:relative;width:375px;height:175px;}
+.info-icon{flex:none;order:0;flex-grow:0;margin:px;width:61.54px;height:64.35px;}
+.iconnews{position:absolute;width:61.54px;height:64.35px;left:0px;top:0px;}
+.info-content{display:flex;flex-direction:column;justify-content:center;align-items:flex-end;padding:20px 10px 10px;gap:14px;flex:none;order:1;align-self:stretch;flex-grow:1;margin:px;width:313.46px;}
+.info-content-head{flex:none;order:0;align-self:stretch;flex-grow:1;margin:px;height:49px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;color:#EB5757;}
+.info-content-body{flex:none;order:1;align-self:stretch;flex-grow:1;margin:px;height:49px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:16px;line-height:19px;color:#828282;}
+.info-content-date{flex:none;order:2;flex-grow:0;margin:px;width:120px;height:19px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:16px;line-height:19px;text-align:right;color:#828282;}
+.Vector{position:absolute;left:3.13%;right:3.12%;top:3.12%;bottom:3.13%;background:#828282;}
+.Vector1{position:absolute;left:8.76%;right:21.1%;top:14.04%;bottom:18.87%;background:#F2994A;}
