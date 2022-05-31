@@ -5,7 +5,6 @@ mask_btn=function(icon="home", type="off"){
       class=paste("mask-btn", icon, type),
       div(
         class="mask-group",
-
         div(
           class="mask-image",
           div(
