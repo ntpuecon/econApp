@@ -7,3 +7,6 @@
 # homepage$tag() |> econWeb::browseTag2()
 
 #remotes::install_github("ntpuecon/econApp", force=T)
+#remotes::install_github("tpemartin/apptest", force=T)
+#remotes::install_github("tpemartin/econR2", force=T)
+

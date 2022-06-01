@@ -7,8 +7,8 @@
 #' @export
 #'
 #' @examples none.
-classMap_footer <- function(category="公職考試", dependency=NULL){
-  tagList(tag_classMap_footer(category), classMap_footer_dependency(), dependency)
+classMap_footer <- function(sort="公職考試", dependency=NULL){
+  tagList(tag_classMap_footer(sort), classMap_footer_dependency(), dependency)
 }
 
 
@@ -20,12 +20,12 @@ fig_classMap_footer <- function() {
   fig <- econWeb::Fig()
   fig$export("inst/assets/css/classMap_footer")
 }
-tag_classMap_footer <-function(category){
+tag_classMap_footer <-function(sort){
   tags$div(class = "classMap_footer",
-           tags$div(class = "classMap_footer-word", mapFooterWord(category)),
+           tags$div(class = "classMap_footer-word", mapFooterWord(sort)),
            tags$div(class = "classMap_footer-icon",
                     tags$img(
-                      src=mapFooterIcon(category))))
+                      src=mapFooterIcon(sort))))
 }
 
 # classMap_footer_dependency <- function(){
@@ -36,18 +36,18 @@ tag_classMap_footer <-function(category){
 #     style="classMap_footer.css",
 #     all_files = F
 #   )}
-mapFooterWord <- function(category){
+mapFooterWord <- function(sort){
   switch(
-    category,
+    sort,
     "公職考試"={
       "備註：課程規劃以經建行政考科為主點擊右側了解更多考試資訊"
     },
     "研究所"="備註：課程規劃以經研所考科為主"
   )
 }
-mapFooterIcon <- function(category){
+mapFooterIcon <- function(sort){
   switch(
-    category,
+    sort,
     "公職考試"={
       "lib/econApp-1.0.0/img/iconTest.svg"
     },
