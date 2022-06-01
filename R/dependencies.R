@@ -4,7 +4,7 @@ findthing_dependency <- interna_dependency <- classes_dependency <- classMap_foo
     name="econApp",
     version="1.0.0",
     src=c(file=system.file("/assets",  package = "econApp")),
-    style=c("css/page-master.css","css/statisticCard-master.css", "css/econData.css", "css/ebookcard.css","css/requireclass.css", "css/pillButton.css", "css/calendar.css", "css/equipmentCard.css","css/simplePillButton.css", "css/lectureCard.css", "css/coursemap.css","css/clubinfo-master.css", "css/classMap_footer.css", "css/classes.css","css/interna.css"),
+    style=c("css/findthing.css", "css/page-master.css","css/statisticCard-master.css", "css/econData.css", "css/ebookcard.css","css/requireclass.css", "css/pillButton.css", "css/calendar.css", "css/equipmentCard.css","css/simplePillButton.css", "css/lectureCard.css", "css/coursemap.css","css/clubinfo-master.css", "css/classMap_footer.css", "css/classes.css","css/interna.css"),
 
     all_files = T
   )}
