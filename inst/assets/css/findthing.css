@@ -1,0 +1,18 @@
+.findthing{position:relative;width:341px;height:130.25px;background:rgba(242, 153, 74, 0.65);}
+.findthing-name{position:absolute;width:145.43px;height:42.08px;left:calc(50% - 145.43px/2 + 62.68px);top:calc(50% - 42.08px/2 + 1px);font-family:'Roboto';font-style:normal;font-weight:400;font-size:36px;line-height:42px;color:#000000;}
+.findthing-icon{position:absolute;width:100.29px;height:100.19px;left:calc(50% - 100.29px/2 - 88.26px);top:calc(50% - 100.19px/2 - 0px);}
+.Group{position:absolute;left:40.12%;right:40.11%;top:27.51%;bottom:29.26%;}
+.Vector{position:absolute;left:40.55%;right:40.55%;top:85.73%;bottom:3.12%;background:#424242;}
+.Vector1{position:absolute;left:20.17%;right:20.19%;top:3.12%;bottom:29.81%;background:#FFD600;}
+.Vector2{position:absolute;left:32.86%;right:32.86%;top:63.8%;bottom:29.23%;background:#B26500;}
+.Vector3{position:absolute;left:32.86%;right:32.86%;top:63.8%;bottom:29.23%;background:#B26500;}
+.Vector4{position:absolute;left:37.51%;right:37.51%;top:65.68%;bottom:31.1%;background:#FFA000;}
+.Vector5{position:absolute;left:40.37%;right:40.97%;top:43.91%;bottom:29.26%;border:2px solid #B26500;}
+.Vector6{position:absolute;left:40.12%;right:40.11%;top:27.51%;bottom:53.61%;border:2px solid #FFFFFF;}
+.Vector7{position:absolute;left:32.86%;right:32.85%;top:68.02%;bottom:6.77%;background:#82AEC0;}
+.Vector8{position:absolute;left:35.52%;right:36.06%;top:76.27%;bottom:5.79%;background:#2F7889;}
+.Vector9{position:absolute;left:32.95%;right:32.95%;top:68.02%;bottom:29.81%;border:3.997px solid #82AEC0;}
+.Vector10{position:absolute;left:25.69%;right:51.36%;top:7.72%;bottom:66.84%;background:#FFFF8D;}
+.Vector11{position:absolute;left:35.89%;right:35.89%;top:70.19%;bottom:26.15%;background:#FFD600;}
+.Vector12{position:absolute;left:39.13%;right:51.87%;top:78.98%;bottom:12.64%;background:#94D1E0;}
+.Vector13{position:absolute;left:32.26%;right:58.05%;top:57.73%;bottom:34.19%;background:#FFFF8D;}

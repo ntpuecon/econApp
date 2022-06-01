@@ -1,4 +1,4 @@
-interna_dependency <- classes_dependency <- classMap_footer_dependency <- clubinfo_dependency <- coursemap_dependency <- lectureCard_dependency <- simplePillButton_dependency <- equipmentCard_dependency <- calendar_dependency <- pillButton_dependency<- requireclass_dependency <-ebookcard_dependency <-econData_dependency <-pageHeader_dependency<-maskBtn_dependency <- footer2_dependency <- page_dependency <- function(){
+findthing_dependency <- interna_dependency <- classes_dependency <- classMap_footer_dependency <- clubinfo_dependency <- coursemap_dependency <- lectureCard_dependency <- simplePillButton_dependency <- equipmentCard_dependency <- calendar_dependency <- pillButton_dependency<- requireclass_dependency <-ebookcard_dependency <-econData_dependency <-pageHeader_dependency<-maskBtn_dependency <- footer2_dependency <- page_dependency <- function(){
 
   htmltools::htmlDependency(
     name="econApp",
