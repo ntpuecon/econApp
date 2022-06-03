@@ -7,7 +7,7 @@
 useMaterialise <- function(tag){
   htmltools::attachDependencies(
     tag,
-    allDep
+    econApp::allDep
   )
 }
 ebookcard_dependency <-econData_dependency <- pageHeader_dependency<-maskBtn_dependency <- footer2_dependency <- page_dependency <- function(){
