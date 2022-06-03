@@ -1,3 +1,15 @@
+#' Attach materialise, jquery, google font icon and mobile dependencies
+#'
+#' @param tag a tag
+#'
+#' @return a tag
+#' @export
+useMaterialise <- function(tag){
+  htmltools::attachDependencies(
+    tag,
+    allDep
+  )
+}
 ebookcard_dependency <-econData_dependency <- pageHeader_dependency<-maskBtn_dependency <- footer2_dependency <- page_dependency <- function(){
   htmltools::htmlDependency(
     name="econApp",
