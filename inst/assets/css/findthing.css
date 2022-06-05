@@ -1,4 +1,4 @@
-.findthing{position:relative;width:341px;height:130.25px;background:rgba(242, 153, 74, 0.65);}
+.findthing{position:relative;height:130.25px;background:rgba(242, 153, 74, 0.65);}
 .findthing-name{position:absolute;width:145.43px;height:42.08px;left:calc(50% - 145.43px/2 + 62.68px);top:calc(50% - 42.08px/2 + 1px);font-family:'Roboto';font-style:normal;font-weight:400;font-size:36px;line-height:42px;color:#000000;}
 .findthing-icon{position:absolute;width:100.29px;height:100.19px;left:calc(50% - 100.29px/2 - 88.26px);top:calc(50% - 100.19px/2 - 0px);}
 .Group{position:absolute;left:40.12%;right:40.11%;top:27.51%;bottom:29.26%;}

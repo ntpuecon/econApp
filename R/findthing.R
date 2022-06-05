@@ -23,7 +23,7 @@
   tag_findthing <- function(category){
     tagList(
       tags$div(class = "findthing", style = htmltools::css(`background`=findthingBack(category)),
-               style = htmltools::css(`position`="relative", `width`="341px", `height`="130.25px"),
+               style = htmltools::css(`position`="relative", `height`="130.25px"),
                tags$div(class = "findthing-name",
                         style = htmltools::css(`position`="absolute", `width`="145.43px", `height`="42.08px", `left`="calc(50% - 145.43px/2 + 62.68px)", `top`="calc(50% - 42.08px/2 + 1px)", `font-family`="Roboto", `font-style`="normal", `font-weight`="400", `font-size`="36px", `line-height`="42px", `color`="#000000"), findthingName(category)),
                tags$div(class = "findthing-icon",
