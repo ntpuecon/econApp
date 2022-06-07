@@ -21,7 +21,7 @@ fig_findthingPageContent <- function() {
   fig$export("inst/assets/css/findthingPageContent")
 }
 tag_findthingPageContent <-function(){
-  tags$div(class = "findthingPageContent", style = htmltools::css(`position`="relative"),
+  tags$div(class = "findthingPageContent",
            tags$div(style=htmltools::css(`position`="relative", `width`="100%"), findthing("重要消息")),
            tags$div(style=htmltools::css(`position`="relative", `width`="100%"), findthing("講座資訊")),
            tags$div(style=htmltools::css(`position`="relative", `width`="100%"), findthing("器材借用")),

@@ -1,4 +1,4 @@
-.findthingPageContent{display:flex;flex-direction:column;align-items:flex-start;padding:24px 17px;gap:15px;position:relative;}
+.findthingPageContent{display:flex;flex-direction:column;align-items:flex-start;padding:calc(50vmax - 283px) 17px;gap:15px;position:relative;}
 .findthingPageContent-announcement{flex:none;order:0;align-self:stretch;flex-grow:1;margin:px;height:130.25px;background:rgba(242, 153, 74, 0.65);}
 .findthingPageContent-announcement-name{position:absolute;width:145.43px;height:42.08px;left:calc(50% - 145.43px/2 + 62.68px);top:calc(50% - 42.08px/2 + 1px);font-family:'Roboto';font-style:normal;font-weight:400;font-size:36px;line-height:42px;color:#000000;}
 .findthingPageContent-announcement-icon{position:absolute;width:100.29px;height:100.19px;left:calc(50% - 100.29px/2 - 88.26px);top:calc(50% - 100.19px/2 - 0px);}
