@@ -1,0 +1,7 @@
+.importantInfo{display:flex;flex-direction:column;align-items:flex-start;padding:0px;gap:1px;position:relative;width:375px;height:614px;}
+.importantInfo-sorts{display:flex;flex-direction:row;align-items:flex-start;padding:0px;/*gap:1px;*/flex:none;order:0;align-self:stretch;flex-grow:0;margin:px;height:74px;}
+.importantInfo-sorts-alumni{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;gap:10px;flex:none;order:0;flex-grow:1;margin:px;width:40%;height:74px;background:rgba(242, 153, 74, 0.2);border:1px solid #000000;border-radius:20px 20px 0px 0px;}
+.importantInfo-sorts-alumni-word{flex:none;order:0;flex-grow:0;width:-webkit-fill-available;/*height:28px;*/font-family:'Roboto';font-style:normal;font-weight:400;font-size:24px;line-height:28px;text-align:center;color:#000000;}
+.importantInfo-sorts-internship{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;gap:10px;flex:none;order:1;flex-grow:1;margin:px;width:40%;height:74px;background:#FFFDFD;border:1px solid #000000;border-radius:20px 20px 0px 0px;}
+.importantInfo-sorts-internship-word{flex:none;order:0;flex-grow:1;width:-webkit-fill-available;/*height:28px;*/font-family:'Roboto';font-style:normal;font-weight:400;font-size:24px;line-height:28px;text-align:center;color:#000000;}
+.importantInfo-info{display:flex;flex-direction:column;align-items:flex-start;padding:0px;flex:none;order:1;align-self:stretch;flex-grow:1;margin:px;/*height:539px;*/background:rgba(242, 153, 74, 0.2);border:1px solid #000000;}
