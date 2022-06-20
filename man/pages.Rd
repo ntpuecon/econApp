@@ -11,6 +11,9 @@ pages(pageTitle = "首頁", content = NULL)
 
 \item{content}{a shiny.tag to be inserted into page content.}
 }
+\value{
+
+}
 \description{
 Page template constructor
 }

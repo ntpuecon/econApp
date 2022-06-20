@@ -2,47 +2,24 @@
 % Please edit documentation in R/classes.R
 \name{classes}
 \alias{classes}
-\title{生成課程地圖(課程名稱)小卡片}
+\title{Title 生成課程小卡片}
 \usage{
-classes(
-  class1 = "經濟學原理",
-  class2 = "統計學",
-  class3 = "個體經濟學",
-  class4 = "國際經濟學",
-  class5 = "微積分",
-  class6 = "貨幣銀行學",
-  class7 = "總體經濟學",
-  class8 = "公共經濟學",
-  type = "必修課程",
-  dependency = NULL
-)
+classes(classname = "總體經濟學", pin = "有", back = "初始", dependency = NULL)
 }
 \arguments{
-\item{class1}{a character 課程名稱例如"經濟學原理"(可留空格)}
+\item{classname}{a character 課程名稱}
 
-\item{class2}{a character}
+\item{pin}{"有" or "無"}
 
-\item{class3}{a character}
+\item{back}{"初始" or "選定" or "先修課"}
 
-\item{class4}{a character}
-
-\item{class5}{a character}
-
-\item{class6}{a character}
-
-\item{class7}{a character}
-
-\item{class8}{a character}
-
-\item{type}{必修課程 or 選修課程}
-
-\item{dependency}{}
+\item{dependency}{default="NULL"}
 }
 \value{
 
 }
 \description{
-生成課程地圖(課程名稱)小卡片
+Title 生成課程小卡片
 }
 \examples{
 none
