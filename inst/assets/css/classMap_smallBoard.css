@@ -1,0 +1,6 @@
+.board{position:relative;width:342px;height:227.11px;}
+.board-back{position:absolute;left:0%;right:0%;top:15.73%;bottom:0%;background:rgba(47, 128, 237, 0.2);}
+.board-prerequisites{position:absolute;left:33.63%;right:32.75%;top:0%;bottom:85.77%;}
+.board-prerequisites-board{position:absolute;left:0%;right:0%;top:0%;bottom:0%;background:#2F80ED;border-radius:10px;}
+.board-prerequisites-text{position:absolute;width:95px;height:28px;left:calc(50% - 95px/2);top:calc(50% - 28px/2 - 0.16px);font-family:'Roboto';font-style:normal;font-weight:400;font-size:18px;line-height:21px;display:flex;align-items:center;text-align:center;color:#FFFFFF;}
+.board-type{position:absolute;left:0.88%;right:66.96%;top:3.69%;bottom:86.68%;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;display:flex;align-items:center;color:#000000;}
