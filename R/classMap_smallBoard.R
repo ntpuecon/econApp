@@ -22,14 +22,14 @@ tag_classMap_smallBoard <-function(sort,classtype){
   tags$div(class = "board",
            tags$div(class = "board-back"),
            tags$div(class = "board-prerequisites",
-                    style = htmltools::css(`visibility`= state(classtype)),
+                    style = htmltools::css(`visibility`= condition(classtype)),
                     tags$div(class = "board-prerequisites-board"),
                     tags$div(class = "board-prerequisites-text","先修課程")),
            tags$div(class = "board-type",sort))
 
 }
 
-state <- function(classtype){
+condition <- function(classtype){
   switch(
     classtype,
     "全部課程"={"hidden"},
